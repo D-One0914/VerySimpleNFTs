@@ -27,7 +27,7 @@ contract NFT is ERC721,Ownable {
         return bytes(url).length > 0 ? string(abi.encodePacked(url,"/",Strings.toString(tokenId),".json")) : "";
     }
 
-    //ipfs://QmZAboKeh7mkfag4CSGN3G9gKyhEFXkrT3ib3F7En68LRF
+    //ipfs://QmdDdUDYrK5pJXM4x3yK6pe8Yzy74NAarQARRuJPLdkqiB
     function setURL(string calldata _url) external onlyOwner(){
         require(bytes(url).length==0 ,"Cannot set up URL more than twice");
         url = _url;
