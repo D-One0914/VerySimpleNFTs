@@ -1,0 +1,21 @@
+{
+  "name": "myTest #2",
+  "description": "myTest",
+  "image": "ipfs://QmfTAG9gPqNBFkLKMgBdVpmNvKYxNqhEcGgXEFMNJWY7NK/2.jpg",
+  "attributes": [
+    {
+      "trait_type": "Test",
+      "value": "100%"
+    },
+    {
+      "display_type": "boost_percentage",
+      "trait_type": "Stamina Increase",
+      "value": 10
+    },
+    {
+      "display_type": "date",
+      "trait_type": "birthday",
+      "value": 1667314800
+    }
+  ]
+}
