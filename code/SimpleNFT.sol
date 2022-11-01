@@ -15,8 +15,8 @@ contract NFT is ERC721,Ownable {
     }
 
     function mint() external payable {
-        require(price == msg.value ,"Issuficient value");
-        require(id <= MAX ,"NFT is out of stock");
+        require(price == msg.value ,"Insufficient value");
+        require(id <= MAX ,"Out of stock");
         _safeMint(msg.sender, id);
         ++id;
     }
@@ -26,10 +26,10 @@ contract NFT is ERC721,Ownable {
         _requireMinted(tokenId);
         return bytes(url).length > 0 ? string(abi.encodePacked(url,"/",Strings.toString(tokenId),".json")) : "";
     }
-
+    //https://ipfs.io/ipfs/QmdDdUDYrK5pJXM4x3yK6pe8Yzy74NAarQARRuJPLdkqiB/1.json
     //ipfs://QmdDdUDYrK5pJXM4x3yK6pe8Yzy74NAarQARRuJPLdkqiB
     function setURL(string calldata _url) external onlyOwner(){
-        require(bytes(url).length==0 ,"Cannot set up URL more than twice");
+        require(bytes(url).length==0 ,"No more than twice");
         url = _url;
     }
 
