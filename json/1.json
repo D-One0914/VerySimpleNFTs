@@ -1,7 +1,8 @@
 {
   "name": "myTest #1",
   "description": "myTest",
-  "image": "ipfs://QmVhMrH4RVytDz3sL3wD1UUKPUsh7M4sBbfAA59rV4Ruo8/1.mp4",
+  "image": "ipfs://QmZ5M8o2xvWMUubho7YYw8ba1kx44jiLPrXTroCyEo8umc/cover.jpg",
+  "animation_url": "ipfs://QmZ5M8o2xvWMUubho7YYw8ba1kx44jiLPrXTroCyEo8umc/1.mp4",
   "attributes": [
     {
       "trait_type": "Test",
